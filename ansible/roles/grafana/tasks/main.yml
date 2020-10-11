@@ -15,8 +15,8 @@
   file:
     path: "{{ grafana_install_path }}"
     state: directory
-    owner: pi
-    group: pi
+    owner: ubuntu
+    group: ubuntu
     mode: 0775
 
 - stat:

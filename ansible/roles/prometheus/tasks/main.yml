@@ -3,8 +3,8 @@
   file:
     path: "{{ prometheus_install_path }}"
     state: directory
-    owner: pi
-    group: pi
+    owner: ubuntu
+    group: ubuntu
     mode: 0775
 
 - name: Creates log directory
@@ -12,8 +12,8 @@
   file:
     path: "{{ prometheus_log_path }}"
     state: directory
-    owner: pi
-    group: pi
+    owner: ubuntu
+    group: ubuntu
     mode: 0775
 
 - stat:

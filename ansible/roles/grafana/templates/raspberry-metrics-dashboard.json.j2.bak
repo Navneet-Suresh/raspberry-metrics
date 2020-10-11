@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1602432357525,
+  "iteration": 1583677508264,
   "links": [],
   "panels": [
     {
@@ -35,7 +35,7 @@
     {
       "datasource": "raspberry-prometheus",
       "gridPos": {
-        "h": 8,
+        "h": 6,
         "w": 6,
         "x": 0,
         "y": 1
@@ -504,7 +504,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "node_filesystem_avail_bytes{device=\"/dev/mmcblk0p2\", instance=~\"$instance.*\"}",
+          "expr": "node_filesystem_avail_bytes{device=\"/dev/root\", instance=~\"$instance.*\"}",
           "format": "time_series",
           "intervalFactor": 2,
           "legendFormat": "",
@@ -532,7 +532,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 7
       },
       "id": 21,
       "panels": [],
@@ -556,7 +556,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 10
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 12,
@@ -665,7 +665,7 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 10
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 13,
@@ -757,7 +757,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 17
+        "y": 15
       },
       "id": 22,
       "panels": [],
@@ -782,7 +782,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 18
+        "y": 16
       },
       "hiddenSeries": false,
       "id": 7,
@@ -814,7 +814,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "node_filesystem_size_bytes{device=\"/dev/mmcblk0p2\", instance=~\"$instance.*\"}",
+          "expr": "node_filesystem_size_bytes{device=\"/dev/root\", instance=~\"$instance.*\"}",
           "format": "time_series",
           "hide": false,
           "intervalFactor": 2,
@@ -823,7 +823,7 @@
           "step": 60
         },
         {
-          "expr": "node_filesystem_size_bytes{device=\"/dev/mmcblk0p2\", instance=~\"$instance.*\"} - node_filesystem_avail_bytes{device=\"/dev/mmcblk0p2\", instance=~\"$instance.*\"}",
+          "expr": "node_filesystem_size_bytes{device=\"/dev/root\", instance=~\"$instance.*\"} - node_filesystem_avail_bytes{device=\"/dev/root\", instance=~\"$instance.*\"}",
           "format": "time_series",
           "hide": false,
           "intervalFactor": 2,
@@ -892,7 +892,7 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 18
+        "y": 16
       },
       "hiddenSeries": false,
       "id": 32,
@@ -995,7 +995,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 25
+        "y": 23
       },
       "id": 23,
       "panels": [],
@@ -1018,7 +1018,7 @@
         "h": 7,
         "w": 12,
         "x": 0,
-        "y": 26
+        "y": 24
       },
       "hiddenSeries": false,
       "id": 9,
@@ -1122,7 +1122,7 @@
         "h": 7,
         "w": 12,
         "x": 12,
-        "y": 26
+        "y": 24
       },
       "hiddenSeries": false,
       "id": 33,
@@ -1211,8 +1211,8 @@
       {
         "allValue": null,
         "current": {
-          "text": "192.168.1.174",
-          "value": "192.168.1.174"
+          "text": "{{ groups['main-raspberry'][0] }}",
+          "value": "{{ groups['main-raspberry'][0] }}"
         },
         "datasource": "raspberry-prometheus",
         "definition": "",
