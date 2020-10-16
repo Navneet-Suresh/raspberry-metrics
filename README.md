@@ -20,8 +20,8 @@ This project contains [Ansible](https://www.ansible.com/) playbook which install
 
 ### Prerequisites ###
 
-* Raspberry PI with ARMv7 processor (Tested on [Raspberry PI 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/))
-* Debian installed on Raspberry (like [Raspbian Buster](https://www.raspberrypi.org/downloads/raspbian/))
+* Raspberry PI with ARMv7/ARM x64 processor (Tested on [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/))
+* Ubuntu Server installed on Raspberry (like [Ubuntu Server 20.04 LTS](https://ubuntu.com/download/raspberry-pi))
 * open port 22 on raspberry (SSH)
 * open port 3000 on raspberry (Grafana)
 
